@@ -13,9 +13,10 @@ namespace TestHarness
         static void Main(string[] args)
         {
             const string topicName = "TestHarness";
+            //const string topicName = "simplekafkatest171029";
 
             //create an options file that sets up driver preferences
-            var options = new KafkaOptions(new Uri("http://CSDKAFKA01:9092"), new Uri("http://CSDKAFKA02:9092"))
+            var options = new KafkaOptions(new Uri("http://192.168.2.171:9092"), new Uri("http://192.168.2.172:9092"))
             {
                 Log = new ConsoleLog()
             };
